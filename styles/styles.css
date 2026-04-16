@@ -284,6 +284,10 @@ section:first-child {
     top: -4rem;
     margin-bottom: -5rem;
   }
+
+  .productos {
+    text-align: left;
+  }
 }
 
 .primary-button {
