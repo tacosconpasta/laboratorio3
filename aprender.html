@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>La Cocina — Aprender</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="assets/icons/icon.svg" />
+        La Mesa Virtual
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="blogs.html">Recetas</a></li>
+        <li><a href="aprender.html">Aprender</a></li>
+        <li><a href="recomendados.html">Recomendados</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="articles" style="padding-bottom: 2rem">
+        <h2>Recursos de Aprendizaje</h2>
+        <div class="blogs">
+          <article class="blog-post">
+            <iframe
+              src="https://www.youtube.com/embed/P6W8kwmwcno?si=XR37JrYKaJV0_CrH"
+            ></iframe>
+            <div class="blog-content">
+              <h3>Técnicas básicas de cocina para principiantes</h3>
+              <p>
+                Aprende los cortes esenciales, el manejo del cuchillo y las
+                técnicas de cocción que todo cocinero debe dominar antes de
+                aventurarse con recetas avanzadas.
+              </p>
+              <p style="font-style: italic; font-size: 0.85rem">
+                Joshua Weissman, canal de YouTube (2024)
+              </p>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <iframe
+              src="https://www.youtube.com/embed/4h1imzBn8pE?si=7Js2ZvzO_OaWOThD"
+            ></iframe>
+            <div class="blog-content">
+              <h3>El arte del mise en place</h3>
+              <p>
+                Descubre por qué los grandes chefs preparan y organizan cada
+                ingrediente antes de cocinar. El mise en place es la base de una
+                cocina eficiente y sin estrés, ideal para replicar en casa.
+              </p>
+              <p style="font-style: italic; font-size: 0.85rem">
+                WebstaurantStore, canal de YouTube (2025)
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>¡Suscríbete al blog aquí!</h2>
+      <form action="#" method="post">
+        <div class="form-input-container">
+          <label for="email">Correo electrónico:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="direccion@correo.com"
+            required
+          />
+        </div>
+        <button class="primary-button-alternate" type="submit">
+          Suscribirme
+        </button>
+      </form>
+      <p class="disclaimer">© La Mesa Virtual 2026</p>
+    </footer>
+  </body>
+</html>

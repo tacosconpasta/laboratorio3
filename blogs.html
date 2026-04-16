@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>La Mesa Virtual — Recetas</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="assets/icons/icon.svg" />
+        La Mesa Virtual
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="blogs.html">Recetas</a></li>
+        <li><a href="aprender.html">Aprender</a></li>
+        <li><a href="recomendados.html">Recomendados</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="articles" style="padding-bottom: 2rem">
+        <h2>Recetas</h2>
+        <div class="blogs">
+          <article class="blog-post">
+            <img
+              src="assets/images/blogMiniaturas/carbonara.jpg"
+              alt="Pasta Carbonara"
+              style="object-fit: cover"
+            />
+            <div class="blog-content">
+              <h3>Pasta Carbonara Clásica</h3>
+              <p>
+                Domina la técnica italiana que transforma cuatro ingredientes
+                simples en un plato cremoso e irresistible.
+              </p>
+              <a href="carbonara.html" class="primary-button-alternate"
+                >Ver receta</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <img
+              src="assets/images/blogMiniaturas/tacos_de_birria.jpg"
+              alt="Tacos de Birria"
+              style="object-fit: cover"
+            />
+            <div class="blog-content">
+              <h3>Tacos de Birria</h3>
+              <p>
+                Carne de res cocida a fuego lento en consomé de chiles, servida
+                en tortilla dorada y bañada en su propio caldo.
+              </p>
+              <a href="birria.html" class="primary-button-alternate"
+                >Ver receta</a
+              >
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <img
+              src="assets/images/blogMiniaturas/arroz_con_pollo.jpg"
+              alt="Arroz con Pollo"
+              style="object-fit: cover"
+            />
+            <div class="blog-content">
+              <h3>Arroz con Pollo</h3>
+              <p>
+                Un clásico reconfortante: pollo jugoso cocido junto al arroz
+                en un sofrito de jitomate, ajo y especias.
+              </p>
+              <a href="arroz-con-pollo.html" class="primary-button-alternate"
+                >Ver receta</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>¡Suscríbete al blog aquí!</h2>
+      <form action="#" method="post">
+        <div class="form-input-container">
+          <label for="email">Correo electrónico:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="direccion@correo.com"
+            required
+          />
+        </div>
+        <button class="primary-button-alternate" type="submit">
+          Suscribirme
+        </button>
+      </form>
+      <p class="disclaimer">© La Mesa Virtual 2026</p>
+    </footer>
+  </body>
+</html>
