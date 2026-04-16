@@ -251,6 +251,10 @@ section:first-child {
   #landing p {
     font-size: 1rem;
   }
+
+  #landing .container {
+    gap: 6rem;
+  }
 }
 
 /*Pantallas de móvil*/
