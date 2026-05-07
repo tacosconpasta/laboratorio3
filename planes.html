@@ -11,28 +11,7 @@
       :root { --cream: #fffaf5; --cream-dark: #f5ede0; }
       body { background-color: var(--cream); font-family: 'DM Sans', sans-serif; }
 
-      header {
-        background-color: var(--primary-color-900);
-        color: #fff;
-        padding: 0.85rem 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 2px solid var(--action-color-500);
-      }
-      header .brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
-      header .brand img { height: 2.25rem; width: auto; filter: brightness(0) invert(1); }
-      header .brand-name { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: #fff; }
-      header .header-cta {
-        background-color: var(--action-color-500); color: #fff; border: none;
-        padding: 0.5rem 1.25rem; border-radius: 0.35rem; font-weight: 600;
-        font-size: 0.85rem; text-decoration: none; transition: background-color 0.2s;
-      }
-      header .header-cta:hover { background-color: var(--action-color-600); color: #fff; }
-
-      #main-nav { background-color: var(--cream) !important; border-bottom: 1px solid var(--primary-color-100); }
-      #main-nav .nav-link { font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 0.88rem; color: var(--primary-color-800) !important; letter-spacing: 0.03rem; text-transform: uppercase; padding: 0.5rem 1rem !important; }
-      #main-nav .nav-link:hover, #main-nav .nav-link.active { color: var(--action-color-500) !important; }
+      header { display: none !important; }
 
       .page-hero {
         background-color: var(--primary-color-900);
@@ -125,21 +104,17 @@
     </style>
   </head>
   <body>
-    <header>
-      <a class="brand" href="index.html">
-        <img src="assets/icons/icon.svg" alt="La Mesa Virtual" />
-        <span class="brand-name">La Mesa Virtual</span>
-      </a>
-      <a href="contacto.html" class="header-cta">Comenzar ahora</a>
-    </header>
-
     <nav class="navbar navbar-expand-md sticky-top" id="main-nav">
-      <div class="container-fluid justify-content-center">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/icons/icon.svg" alt="La Mesa Virtual" />
+          La Mesa Virtual
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
-          <ul class="navbar-nav gap-2">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+          <ul class="navbar-nav gap-1 me-3">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link active" href="planes.html">Planes</a></li>
             <li class="nav-item"><a class="nav-link" href="blogs.html">Recetas</a></li>
@@ -147,6 +122,7 @@
             <li class="nav-item"><a class="nav-link" href="recomendados.html">Productos</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
+          <a href="planes.html" class="nav-link nav-cta">Comenzar ahora</a>
         </div>
       </div>
     </nav>

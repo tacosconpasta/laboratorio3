@@ -31,16 +31,8 @@
         opacity: 0.35;
       }
 
-      /* ── HEADER ── */
-      header {
-        background-color: var(--primary-color-900);
-        color: #fff;
-        padding: 0.85rem 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 2px solid var(--action-color-500);
-      }
+      /* ── HEADER OCULTO ── */
+      header { display: none !important; }
 
       header .brand {
         display: flex;
@@ -911,12 +903,16 @@
     </header>
 
     <nav class="navbar navbar-expand-md sticky-top" id="main-nav">
-      <div class="container-fluid justify-content-center">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/icons/icon.svg" alt="La Mesa Virtual" />
+          La Mesa Virtual
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
-          <ul class="navbar-nav gap-2">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+          <ul class="navbar-nav gap-1 me-3">
             <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="planes.html">Planes</a></li>
             <li class="nav-item"><a class="nav-link" href="blogs.html">Recetas</a></li>
@@ -924,6 +920,7 @@
             <li class="nav-item"><a class="nav-link" href="recomendados.html">Productos</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
+          <a href="planes.html" class="nav-link nav-cta">Comenzar ahora</a>
         </div>
       </div>
     </nav>
